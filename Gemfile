@@ -30,7 +30,8 @@ gem 'bootstrap-sass', '~> 3.3.4'
 gem 'paperclip'
 # Use Unicorn as the app server
 # gem 'unicorn'
-
+# Nested forms
+gem 'cocoon'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
