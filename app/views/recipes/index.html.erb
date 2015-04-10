@@ -4,10 +4,22 @@
     <title></title>
 </head>
 <body>
-<%= @recipe.each do |recipe| %>
-    <h2>
-        <%= link_to recipe.title, recipe %>
-    </h2>
-<% end %>
+    <%= @recipe.in_groups_of(3, false).each do |recipes| %>
+        <div class="row">   
+            <%= recipes.each do |recipe| %>
+                <div class="col-md-4">
+                    <div class="recipe">
+                        <div class="image_wrapper">
+                            <h2><%= link_to recipe.title, recipe %></h2>
+                            <%= link_to recipe do %>
+                                <%= image_tag recipe.image.url(:medium) %>
+                            <% end %>
+                        </div>
+                    </div>
+                </div>
+            <% end %>
+        </div>
+    <% end %>
+</div>
 </body>
 </html>

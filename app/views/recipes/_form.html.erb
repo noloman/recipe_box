@@ -11,16 +11,15 @@
             <p><%= @recipe.errors.count %> errors prevented this recipe from saving</p>
             <ul>
                 <% @recipe.errors.full_messages.each do |msg| %>
-                    <li>
-                        <%= msg %>
-                    </li>
+                    <li><%= msg %></li>
                 <% end %>
             </ul>
         </div>
     <% end %>
-        <div class="panel-body">
+        <div class="form-group">
             <%= f.input :title, class: "form-control" %>
             <%= f.input :description, class: "form-control" %>
+            <%= f.input :image, as: :file %>
             <%= f.button :submit, class: "btn btn-primary" %>
         </div>
 <% end %>
