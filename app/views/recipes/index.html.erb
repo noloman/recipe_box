@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-</head>
-<body>
+
     <%= @recipe.in_groups_of(3, false).each do |recipes| %>
         <div class="row">   
             <%= recipes.each do |recipe| %>
@@ -21,5 +16,3 @@
         </div>
     <% end %>
 </div>
-</body>
-</html>
