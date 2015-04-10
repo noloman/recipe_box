@@ -4,8 +4,8 @@ class Recipe < ActiveRecord::Base
 
     validates :title, :description, :image, presence: true
 
-    accepts_nested_attributes_for :ingredients, :reject_if => :all_blank, :allow_destroy => true
-    accepts_nested_attributes_for :directions, :reject_if => :all_blank, :allow_destroy => true
+    accepts_nested_attributes_for :ingredients
+    accepts_nested_attributes_for :directions
 
     has_attached_file :image, :styles => { :medium => "400x400#" },
     :default_url => "tarta-de-queso-y-brevas-2.jpg"
