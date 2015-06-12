@@ -1,7 +1,42 @@
-<h1>Recipe</h1>
-<h2>Title: <%= @recipe.title %></h2>
-<h2>Description: <%= @recipe.description %></h2>
-<h2>Image: <%= image_tag @recipe.image.url(:medium, class: "recipe_image") %>
-<%= link_to "Back", root_path, class: "btn btn-primary" %>
+<div class="main_content">
+    <div id="recipe_top.row">
+        <div class="col-md-4">
+            <%= image_tag @recipe.image.url(:medium, class: "recipe_image") %>
+        </div>
+        <div class="col-md-8">
+            <div id="recipe_info">
+                <%= @recipe.title %>
+                <%= @recipe.description %>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div id="ingredients">
+                <h2>Ingredients</h2>
+                <ul>
+                    <% @recipe.ingredients.each do |ingredient| %>
+                        <li>ingredient.name</li>
+                    <%end%>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div id="directions">
+                <h2>Directions</h2>
+                <ul>
+                    <% @recipe.directions.each do |direction| %>
+                        <li>direction.step</li>
+                    <%end%>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <%= link_to "Back", root_path, class: "btn btn-primary" %>
 <%= link_to "Edit", edit_recipe_path, class: "btn btn-warning" %>
 <%= link_to "Destroy", recipe_path, method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-primary" %>
+        </div>
+    </div>
+</div>
