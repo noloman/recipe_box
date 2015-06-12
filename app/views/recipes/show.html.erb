@@ -1,9 +1,9 @@
 <div class="main_content">
-    <div id="recipe_top.row">
-        <div class="col-md-4">
+    <div id="recipe_top" class="row">
+        <div class="col-md-6">
             <%= image_tag @recipe.image.url(:medium, class: "recipe_image") %>
         </div>
-        <div class="col-md-8">
+        <div class="col-md-6">
             <div id="recipe_info">
                 <%= @recipe.title %>
                 <%= @recipe.description %>
