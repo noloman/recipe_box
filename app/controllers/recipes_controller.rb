@@ -21,6 +21,9 @@ class RecipesController < ApplicationController
         end
     end
 
+    def edit
+    end
+
     def update
         if @recipe.update(recipe_params)
             redirect_to root_path
@@ -46,6 +49,6 @@ class RecipesController < ApplicationController
     end
 
     def recipe_params
-        params.require(:recipe).permit(:title, :description, :image)
+        params.require(:recipe).permit(:title, :description, :image, ingredients_attributes: [:id, :name, :_destroy], directions_attributes: [:id, :step, :_destroy])
     end
 end
