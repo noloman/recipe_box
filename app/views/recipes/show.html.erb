@@ -7,6 +7,7 @@
             <div id="recipe_info">
                 <%= @recipe.title %>
                 <%= @recipe.description %>
+                <p>Submitted by <%=@recipe.user.email %></p>
             </div>
         </div>
     </div>
