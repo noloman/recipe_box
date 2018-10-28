@@ -70,6 +70,7 @@ GEM
     execjs (2.7.0)
     globalid (0.3.3)
       activesupport (>= 4.1.0)
+    hike (1.2.3)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
     jbuilder (2.7.0)
@@ -97,6 +98,7 @@ GEM
       activemodel (>= 4.2.0)
       activesupport (>= 4.2.0)
       mime-types
+    rack (1.6.10)
       mimemagic (~> 0.3.0)
       terrapin (~> 0.6.0)
     rack (1.6.10)
