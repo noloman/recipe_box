@@ -163,8 +163,9 @@ GEM
     thor (0.20.0)
     thread_safe (0.3.6)
     tilt (1.4.1)
-    turbolinks (2.5.3)
-      coffee-rails
+    turbolinks (5.2.0)
+      turbolinks-source (~> 5.2)
+    turbolinks-source (5.2.0)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
     uglifier (2.7.1)
