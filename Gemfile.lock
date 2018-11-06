@@ -94,7 +94,7 @@ GEM
       activemodel (>= 4.2.0)
       activesupport (>= 4.2.0)
       mime-types
-    rack (1.6.10)
+    rack (1.6.11)
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (4.2.10)
