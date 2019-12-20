@@ -166,7 +166,7 @@ GEM
       tilt
     sdoc (1.0.0)
       rdoc (>= 5.0)
-    simple_form (5.0.0)
+    simple_form (5.0.1)
       actionpack (>= 5.0)
       activemodel (>= 5.0)
     spring (2.1.0)
