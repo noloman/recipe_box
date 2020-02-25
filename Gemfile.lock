@@ -73,8 +73,8 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
-    concurrent-ruby (1.1.5)
-    crass (1.0.5)
+    concurrent-ruby (1.1.6)
+    crass (1.0.6)
     devise (4.7.1)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -117,7 +117,7 @@ GEM
       activemodel (>= 4.2.0)
       activesupport (>= 4.2.0)
       mime-types
-    rack (2.0.8)
+    rack (2.2.2)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails (6.0.2.1)
@@ -164,7 +164,7 @@ GEM
       tilt
     sdoc (1.0.0)
       rdoc (>= 5.0)
-    simple_form (5.0.1)
+    simple_form (5.0.2)
       actionpack (>= 5.0)
       activemodel (>= 5.0)
     spring (2.1.0)
